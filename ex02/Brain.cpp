@@ -1,34 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Dog.hpp                                            :+:      :+:    :+:   */
+/*   Brain.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: naiqing <naiqing@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/06 11:14:36 by naiqing           #+#    #+#             */
-/*   Updated: 2025/04/06 13:46:47 by naiqing          ###   ########.fr       */
+/*   Created: 2025/04/06 13:34:47 by naiqing           #+#    #+#             */
+/*   Updated: 2025/04/06 13:45:39 by naiqing          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DOG_HPP
-#define DOG_HPP
-
-#include "Animal.hpp"
 #include "Brain.hpp"
 
-class Dog : public Animal
+Brain::Brain()
 {
-	private:
-		Brain	*_brain;
-		
-	public:
-		Dog();
-		~Dog();
-		Dog(const Dog &other);
-		Dog &operator=(const Dog &other);
+	std::cout << "Brain construtor called" << std::endl;
+}
 
-		void	makeSound() const;
-		
-};
+Brain::~Brain()
+{
+	std::cout << "Brain destrutor called" << std::endl;
+}
 
-#endif
+Brain::Brain(const Brain &other)
+{
+	for (int i = 0; i < 100; i++)
+			this->_ideas[i] = other._ideas[i];
+}
+
+Brain &Brain::operator=(const Brain &other)
+{
+	if (this != &other)
+	{
+		for (int i = 0; i < 100; i++)
+			this->_ideas[i] = other._ideas[i];
+	}
+	return (*this);
+}

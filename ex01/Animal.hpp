@@ -28,7 +28,7 @@ class Animal
 
 		const std::string	&getType() const;
 
-		virtual void	makeSound() const = 0; //Abstract Class, an interface
+		virtual void	makeSound() const;
 
 };
 

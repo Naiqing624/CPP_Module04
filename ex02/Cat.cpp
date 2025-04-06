@@ -1,37 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Dog.cpp                                            :+:      :+:    :+:   */
+/*   Cat.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: naiqing <naiqing@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/06 11:15:14 by naiqing           #+#    #+#             */
-/*   Updated: 2025/04/06 13:49:56 by naiqing          ###   ########.fr       */
+/*   Created: 2025/04/06 13:22:14 by naiqing           #+#    #+#             */
+/*   Updated: 2025/04/06 13:51:12 by naiqing          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Dog.hpp"
+#include "Cat.hpp"
 
-Dog::Dog() : Animal()
+Cat::Cat() : Animal()
 {
-	this->_type = "Dog";
+	this->_type = "Cat";
 	this->_brain = new Brain();
-	std::cout << "Dog construtor called" << std::endl;
+	std::cout << "Cat construtor called" << std::endl;
 }
 
-Dog::~Dog()
+Cat::~Cat()
 {
 	delete this->_brain;
-	std::cout << "Dog destrutor called" << std::endl;
+	std::cout << "Cat destrutor called" << std::endl;
 }
 
-Dog::Dog(const Dog &other) : Animal(other)
+Cat::Cat(const Cat &other) : Animal(other)
 {
 	this->_type = other.getType();
 	this->_brain = new Brain(*other._brain);
 }
 
-Dog	&Dog::operator=(const Dog &other)
+Cat	&Cat::operator=(const Cat &other)
 {
 	if (this != &other)
 	{
@@ -42,7 +42,7 @@ Dog	&Dog::operator=(const Dog &other)
 	return (*this);
 }
 
-void	Dog::makeSound() const
+void	Cat::makeSound() const
 {
-	std::cout << "Woof" << std::endl;
+	std::cout << "Miaou" << std::endl;
 }
