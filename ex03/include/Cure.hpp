@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Cure.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: naiqing <naiqing@student.42.fr>            +#+  +:+       +#+        */
+/*   By: nacao <nacao@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/06 14:49:04 by naiqing           #+#    #+#             */
-/*   Updated: 2025/04/06 15:30:00 by naiqing          ###   ########.fr       */
+/*   Updated: 2025/04/07 10:35:05 by nacao            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 #include "AMateria.hpp"
 #include "ICharacter.hpp"
+class AMateria;
 
 class Cure : public AMateria
 {

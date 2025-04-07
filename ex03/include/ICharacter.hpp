@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ICharacter.hpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: naiqing <naiqing@student.42.fr>            +#+  +:+       +#+        */
+/*   By: nacao <nacao@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/06 14:57:47 by naiqing           #+#    #+#             */
-/*   Updated: 2025/04/06 15:02:40 by naiqing          ###   ########.fr       */
+/*   Updated: 2025/04/07 10:36:07 by nacao            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 #include <iostream>
 #include "AMateria.hpp"
+class AMateria;
 
 class ICharacter
 {

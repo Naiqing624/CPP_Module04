@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Ice.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: naiqing <naiqing@student.42.fr>            +#+  +:+       +#+        */
+/*   By: nacao <nacao@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/06 14:49:31 by naiqing           #+#    #+#             */
-/*   Updated: 2025/04/06 15:24:22 by naiqing          ###   ########.fr       */
+/*   Updated: 2025/04/07 11:39:43 by nacao            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ Ice::Ice() : AMateria("ice")
 
 Ice::~Ice()
 {
+
 }
 
 Ice::Ice(const Ice &other) : AMateria(other)

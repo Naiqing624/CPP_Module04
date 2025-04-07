@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Cure.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: naiqing <naiqing@student.42.fr>            +#+  +:+       +#+        */
+/*   By: nacao <nacao@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/06 14:49:41 by naiqing           #+#    #+#             */
-/*   Updated: 2025/04/06 15:32:19 by naiqing          ###   ########.fr       */
+/*   Updated: 2025/04/07 10:41:25 by nacao            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ Cure::Cure(const Cure &other) : AMateria(other)
 Cure &Cure::operator = (const Cure &other)
 {
 	AMateria::operator= (other);
+	return (*this);
 }
 
 AMateria	*Cure::clone() const

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: naiqing <naiqing@student.42.fr>            +#+  +:+       +#+        */
+/*   By: nacao <nacao@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/04 19:42:42 by naiqing           #+#    #+#             */
-/*   Updated: 2025/04/06 14:47:13 by naiqing          ###   ########.fr       */
+/*   Updated: 2025/04/07 13:11:45 by nacao            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int main()
 	delete j;//should not create a leak
 	delete i;
 
-	std::cout << "------------------------" << std::endl;
+	std::cout << "------------------------------------------" << std::endl;
 
 	const Animal *animals[4];
 	for (int i = 0; i < 2; i++)
@@ -37,7 +37,7 @@ int main()
 	for (int i = 0; i < 4; i++)
 		delete animals[i];
 
-	std::cout << "------------------------" << std::endl;
+	std::cout << "---------deep copy------------------------" << std::endl;
 	
 	Dog dog1;
 	dog1.setIdea(0, "Eat sausage");

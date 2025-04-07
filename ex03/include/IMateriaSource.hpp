@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   IMateriaSource.hpp                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: naiqing <naiqing@student.42.fr>            +#+  +:+       +#+        */
+/*   By: nacao <nacao@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/06 14:58:40 by naiqing           #+#    #+#             */
-/*   Updated: 2025/04/06 16:43:23 by naiqing          ###   ########.fr       */
+/*   Updated: 2025/04/07 10:34:51 by nacao            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 #define IMATERIASOURCE_HPP
 
 #include "AMateria.hpp"
+class AMateria;
+
 
 class IMateriaSource
 {

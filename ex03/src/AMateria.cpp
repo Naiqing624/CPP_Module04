@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   AMateria.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: naiqing <naiqing@student.42.fr>            +#+  +:+       +#+        */
+/*   By: nacao <nacao@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/06 14:49:23 by naiqing           #+#    #+#             */
-/*   Updated: 2025/04/06 16:40:44 by naiqing          ###   ########.fr       */
+/*   Updated: 2025/04/07 10:31:56 by nacao            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ std::string const &AMateria::getType() const
 	return (this->_type);
 }
 
-void AMateria::use(ICharacter & target)
+void AMateria::use(ICharacter &target)
 {
-	
+	(void)target;
 }

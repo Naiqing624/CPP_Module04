@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: naiqing <naiqing@student.42.fr>            +#+  +:+       +#+        */
+/*   By: nacao <nacao@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/06 10:09:58 by naiqing           #+#    #+#             */
-/*   Updated: 2025/04/06 13:55:16 by naiqing          ###   ########.fr       */
+/*   Updated: 2025/04/07 13:14:42 by nacao            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 
 int	main()
 {
+	//const Animal *test = new Animal();
 	const Animal* dog1 = new Dog();
 	const Animal* cat1 = new Cat();
 
